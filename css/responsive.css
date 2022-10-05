@@ -1,0 +1,21 @@
+/*cuando el tamaño de la pantalla sea menor a los 768px*/
+@media (max-width: 768px) {
+    #s1 {background-image: none;}
+
+    #s1 .display {flex-wrap: wrap;}
+
+    #s2 {
+        background-image: url(/Práctica/CERVECERÍA/img/INDEX-s2.webp)
+        
+    }
+
+}
+
+/*cuando el tamaño de la pantalla sea menor a 430px*/
+
+
+@media (max-width: 430px) {
+    #s2 .display {
+        flex-wrap: wrap;
+    }
+}

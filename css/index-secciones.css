@@ -1,0 +1,73 @@
+*{box-sizing: border-box; padding: 0px; margin: 0px;}
+
+
+body{color: white;}
+
+h1{font-family: 'Montserrat', sans-serif; font-size: 2.5em; text-decoration: underline; text-align: center; padding: 50px 0px 0px 0px;}
+
+p {font-family: 'Open Sans', sans-serif; font-size: 1.25em;}
+
+
+.container {
+    max-width: 1440px;
+    margin: auto;    
+}
+
+/*----------SECCION 1----------*/
+#s1{
+    background-image: url(/Práctica/CERVECERÍA/img/INDEX-back-s1.webp);
+    background-color: #bba87b;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#s1 span{ background-color: #EAC445;}
+
+#s1 .display{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 50px;
+} 
+
+#s1 iframe{padding: 50px}
+
+#s1 p{
+    text-align: justify;
+    padding: 0px 30px;
+}
+/*----------CIERRE SECCION 1----------*/
+
+
+/*----------SECCION 2----------*/
+#s2{background-color: #4D3927;}
+
+#s2 .container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#s2 p{
+    text-align: justify;
+    padding: 50px;
+}
+/*----------CIERRE SECCION 2----------*/
+
+
+/*----------SECCION 3----------*/
+#s3{
+    background-image: url(/Práctica/CERVECERÍA/img/INDEX-back-s3-1440.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 0px 500px 0px;
+
+}
+
+#s3 .container{
+    text-align: center;
+    padding: 100px 0px 0px 400px;
+}
+
+#s3 p{padding: 20px;}
+/*----------CIERRE SECCION 3----------*/
