@@ -63,4 +63,27 @@
         border:1px solid #eac445;
         cursor: pointer;
       }
+
+/*----------SECCION 1----------*/
+#s1{
+    background-image: url(/img/INDEX-back-s1.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#s1 .display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 50px;
+} 
+
+
+
+
+
+
 }
