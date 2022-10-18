@@ -74,15 +74,15 @@ header{
 
 @keyframes banner{
     0%, 30% {
-        background-image: url('img/INDEX-header-1.webp');
+        background-image: url(../img/INDEX-header-1.webp);
     }
 
     35%, 65% {
-        background-image: url('img/INDEX-header-2.webp');
+        background-image: url(../img/INDEX-header-2.webp);
     }
 
     70%, 100% {
-        background-image: url('img/INDEX-header-3.webp')
+        background-image: url(../img/INDEX-header-3.webp)
     }
     
 }
