@@ -40,7 +40,8 @@ i {
   
   .nav #links {
     display: none;
-  }
+    
+}
   
   .nav a {
     float: center;
@@ -62,6 +63,7 @@ i {
     background-color: #eac445;
 
   }
+
 
 /*----------HERO----------*/
 header{

@@ -39,6 +39,9 @@
     background-size: cover;
     padding: 20px;
     height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #s3 h2{

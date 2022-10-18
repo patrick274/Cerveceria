@@ -16,7 +16,8 @@
 
     footer{
         display:flex;
-        justify-content: center
+        justify-content: center;
+        height:20vh;
     }
 }
 
@@ -30,21 +31,25 @@
 
     .nav{
         display:flex;
-        justify-content: flex-end;
-    
     }
 
     .nav #links {
+        flex: 3 1 auto;
         display:flex;
+        justify-content:right;
+        margin-right: 20px;
     }
 
     .nav a:hover {
         color: #EAC445;
+      
     }
 
     .smedia{
+        flex: 1 1 auto;
         margin-left: 10px;
         border-left: 1px solid white;
+       
     }
 
     .nav button:hover {
@@ -53,6 +58,7 @@
         border: 1px solid #ead384;
     
     }
+    
 
     .nav i:hover{
         color: #0D1216;     
@@ -62,6 +68,9 @@
         background-color:#eac445;
         border:1px solid #eac445;
         cursor: pointer;
+      }
+      #logo{
+        flex: 1 1 auto;
       }
 
 /*----------SECCION 1----------*/
