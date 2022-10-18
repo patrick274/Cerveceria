@@ -1,0 +1,50 @@
+/*----------SECCION 1----------*/
+#s1{
+    background-color: #bba87b;
+    padding: 20px;
+}
+
+#s1 .display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#s1 span{background-color: #EAC445;}
+#s1 iframe{padding: 50px;}
+
+/*----------SECCION 2----------*/
+#s2{
+    background-color: #4D3927;
+    padding: 20px;
+}
+
+#s2 .display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+} 
+
+#s2 img{
+    padding: 20px;
+}
+
+/*----------SECCION 3----------*/
+#s3{
+    background-image: url(/img/INDEX-back-s3-1440.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 50vh;
+}
+
+#s3 h2{
+    padding-bottom: 20px;
+}
+
+#s3 p{
+    text-align: center;
+}
