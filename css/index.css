@@ -65,9 +65,10 @@ i {
   }
 
 
+
 /*----------HERO----------*/
 header{
-    background-color: #bba87b;
+    background-color: rgb(187, 168, 123);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -103,10 +104,26 @@ header{
 
 .hero h2{
     margin-bottom: 150px;
-    border-bottom: none;
 }
 
+/*ANIMACIÓN H1 - tracking-in-expand*/
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 
+.tracking-in-expand {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
 
 /*----------BOTON - HERO----------*/
 .hero button{
@@ -120,58 +137,57 @@ header{
  
 }
 
-/*----------FOOTER----------*/
 
-footer{
-    background-color:#bba87b;
+/*----------SECCION 1----------*/
+#s1{
+    background-color: #bba87b;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 30vh;
-    margin-bottom: 0;
 }
 
-footer p{
-    font-size: 0.8em;
-}
-
-footer h3{
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eac445;
-}
-
-footer i{
-    padding: 5px;
-}
-
-.git{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-}
-
-#izquierda-footer{
+#s1 .display{
     display: flex;
     flex-direction: column;
-    border-right: 1px solid white;
-    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+} 
 
+#s1 span{background-color: #EAC445;}
+#s1 iframe{padding: 50px;}
+
+/*----------SECCION 2----------*/
+#s2{
+    background-color: #4D3927;
+    padding: 20px;
 }
 
-#izquierda-footer p{
-    padding:5px;
-}
-
-#centro-footer{
+#s2 .display{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
+} 
+
+#s2 img{
+    padding: 20px;
 }
 
-#derecha-footer{
-    border-left: 1px solid white;
-    padding-left: 10px;
+/*----------SECCION 3----------*/
+#s3{
+    background-image: url(../img/INDEX-back-s3-1440.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#s3 h2{
+    padding-bottom: 20px;
+}
 
+#s3 p{
+    text-align: center;
+}

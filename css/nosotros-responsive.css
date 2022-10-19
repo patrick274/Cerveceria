@@ -1,4 +1,3 @@
-/*cuando el ancho de la pantalla sea menor a 770px*/
 @media (max-width: 770px) {
 
     header .smedia{
@@ -6,6 +5,13 @@
       }
 
     /* ----------FOOTER----------*/
+
+    footer{
+        display:flex;
+        justify-content: center;
+        height:20vh;
+    }
+
     #izquierda-footer{
         display: none;
     }
@@ -14,11 +20,7 @@
         display: none;
     }
 
-    footer{
-        display:flex;
-        justify-content: center;
-        height:20vh;
-    }
+
 }
 
 
@@ -30,13 +32,13 @@
     }
 
     .nav{
-        display:flex;
+        display: flex;
     }
 
     .nav #links {
         flex: 3 1 auto;
-        display:flex;
-        justify-content:right;
+        display: flex;
+        justify-content: right;
         margin-right: 20px;
     }
 
@@ -63,33 +65,7 @@
         color: #0D1216;     
     }
 
-    .hero button:hover{
-        background-color:#eac445;
-        border:1px solid #eac445;
-        cursor: pointer;
-      }
-      #logo{
+    #logo{
         flex: 1 1 auto;
       }
-
-/*----------INDEX - SECCION 1----------*/
-#s1{
-    background-image: url(../img/INDEX-back-s1.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-#s1 .display{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 50px;
-} 
-
-
-
-
-}
+    }

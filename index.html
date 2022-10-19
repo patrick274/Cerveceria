@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/nav-header-footer.css">
-    <link rel="stylesheet" href="css/index-secciones.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/index-responsive.css">
     <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/2e3e7b8e83.js"></script>
     <script src="js/menu-hamb.js"></script>
-  
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Prosit - Craft Beer</title>
 </head>
@@ -29,17 +28,16 @@
             <div id="links">
                 <a href="nosotros.html">NOSOTROS</a>
                 <a href="birras.html">BIRRAS</a>
-                
+                <a href="eventos.html">EVENTOS</a>
                     <button class="btn-abrir-popup" id="btn-abrir-popup">
                         <a href="#">ESCRIBINOS</a>
                     </button>
-                
             </div>
             <div class="smedia">
-                <a href="www.facebook.com/prosit.craftbeer" target="_blank">
+                <a href="https://www.facebook.com/prosit.craftbeer" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="www.instagram.com/prosit.craftbeer" target="_blank">
+                <a href="https://www.instagram.com/prosit.craftbeer" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=2267442534&text=Hola!%20Quisiera%20hacer%20una%20consulta." target="_blank">
@@ -56,8 +54,8 @@
         <!----------HERO---------->
         <div class="hero">
             <div class="titulos-portada">
-                <h1>¡PROSIT!</h1>
-                <h2>- CRAFT BEER -</h2>
+                <h1 class="tracking-in-expand">¡PROSIT!</h1>
+                <h2 class="tracking-in-expand">- CRAFT BEER -</h2>
             </div>
             <a href="nosotros.html">
                 <button>CONOCENOS</button>
@@ -138,10 +136,10 @@
             <img src="img/logo.webp" alt="logo" width="50px">
             <h3>Seguinos en nuestras redes</h3>
             <div>
-                <a href="www.facebook.com/prosit.craftbeer">
+                <a href="https://www.facebook.com/prosit.craftbeer">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="www.instagram.com/prosit.craftbeer">
+                <a href="https://www.instagram.com/prosit.craftbeer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=2267442534&text=Hola!%20Quisiera%20hacer%20una%20consulta." target="_blank">
@@ -165,13 +163,12 @@
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup"
             class="btn-cerrar-popup">X</a>
-            <h3>CONTACTANOS</h3>
+            <h3>ESCRIBINOS</h3>
                 <form action="">
                     <div class="contenedor-inputs">
-                        <input type="text" placeholder="Nombre">
-                        <input type="email" 
-                        placeholder="Correo">
-                        <input type="number" placeholder="Telefono">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo" required>
+                        <input type="text" placeholder="Telefono">
                         <input id="mensaje" type="text" placeholder="Mensaje">
                     </div>
                         <input type="submit" class="btn-enviar" value="ENVIAR">

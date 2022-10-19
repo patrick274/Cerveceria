@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+h1 {
+  font-family: 'Merriweather';
+}
+
+h2 {
+  font-family: 'Montserrat', Light;
+  font-size: 2em;
+  letter-spacing: 2.5px;
+  /* border-bottom: 2px solid #EAC445; */
+  text-align: center;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+i {
+  font-size: 30px;
+}
+
+/* ---------- MENÚ HAMBURGUESA ----------*/
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.237);
+  position: relative;
+}
+
+.nav #links {
+  display: none;
+}
+
+.nav a {
+  float: center;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a.icon {
+  float: right;
+}
+
+.nav button {
+  border-radius: 20px;
+  border: 1px solid #eac445;
+  color: white;
+  background-color: #eac445;
+}
+
+header {
+  background-image: url(../img/NOSOTROS-header.webp);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.hero {
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+/* ---------- SECCIÓN 1 - NOSOTROS  ----------*/
+.img {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.background {
+  background-image: url(../img/BIRRAS-back.webp);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+
+#s1 {
+  padding: 50px 180px
+}
+
+#s1 p {
+  background-color: rgba(151, 136, 101, 0.336);
+  padding: 20px;
+}
+
+/*ANIMACIÓN H1 - tracking-in-expand*/
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.tracking-in-expand {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
