@@ -1,22 +1,97 @@
 * {
-    font-family: sans-serif;
-    box-sizing: border-box; 
-    padding: 0px; 
-    margin: 0px;
-}
-
-body {
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
-    background-image: url("/img/BIRRAS-back.webp");
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    font-family: 'Merriweather';
+}
+  
+h2 {
+    font-family: 'Montserrat', Light;
+    font-size: 2em;
+    letter-spacing: 2.5px;
+    /* border-bottom: 2px solid #EAC445; */
+    text-align: center;
+}
+  
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    text-align: justify;
+}
+  
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+  
+i {
+    font-size: 30px;
+}
+  
+/* ---------- MENÚ HAMBURGUESA ----------*/
+.nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.237);
+    position: relative;
+}
+  
+.nav #links {
+    display: none;
+}
+  
+.nav a {
+    float: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  
+.nav a.icon {
+    float: right;
+}
+  
+.nav button {
+    border-radius: 20px;
+    border: 1px solid #eac445;
+    color: white;
+    background-color: #eac445;
+}
+  
+header {
+    background-image: url(../img/BIRRAS-back.webp);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+.hero {
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+
+.fondo{
+    background-image: url(../img/BIRRAS-back.webp);
+    background-position: center;
+    background-size: cover;
 }
 
 
-/*------Header------*/
-
-/*------Titulo Principal------*/
-
-.hr-lines {
+/* #hr-lines {
     font-size: xx-large;
     position: relative;
     max-width: 800px;
@@ -24,11 +99,11 @@ body {
     text-align: center;
 }
   
-  .hr-lines:before {
+  #hr-lines:before {
     content:" ";
     height: 3px;
     width: 200px;
-    background: black;
+    background: white;
     display: block;
     position: absolute;
     top: 50%;
@@ -36,33 +111,24 @@ body {
     float:inline-start;
 }
   
-  .hr-lines:after{
+  #hr-lines:after{
     content:" ";
     height: 3px;
     width: 200px;
-    background: black;
+    background: white;
     display: block;
     position: absolute;
     top: 50%;
     right: 0;
-}
+} */
 
-/*------Flexbox Definiciones------*/
+/*------SECCIÓN SIGLAS------*/
 
-p {
-    padding: 5px;
-    text-align: center;
-}
-
-.flex-container {
+.siglas {
     display: flex;
-    height: 110px;
     justify-content: center;
     align-items: center;
     background: rgba(5, 5, 5, 0.45);
-    box-shadow: 0 8px 32px 0 rgba(32, 32, 32, 0.37);
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1px );
     border-radius: 10px;
     border: 1px solid rgba(33, 33, 33, 0.18);
     margin-bottom: 30px;
@@ -70,67 +136,155 @@ p {
 
 .srm {
     width: 500px;
-    border-right: solid;
+    padding: 10px;
 }
 
 .abv {
     width: 500px;
-    border-left: solid;
-    border-right: solid;
+    padding: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .ibu {
     width: 500px;
-    border-left: solid;
+    padding: 10px;
 }
 
-
-/*------Flexbox de Birras------*/
-
-.contenedor {
-    /*border: 2px;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;*/
+.siglas h3{
+    text-align: center;
 }
 
-.contenedor {
+.siglas p{
+    text-align: center;
+}
+
+/*------SECCIÓN BIRRAS------*/
+.contenedor{
+    padding: 30px 150px 50px;
+}
+
+.fila{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    position: relative;
-    height: 250px;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.fila img{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*------ANIMACIÓN BIRRAS FLIP CARD------*/
+
+.flip-card {
+    background-color: transparent;
     width: 250px;
-    margin: 30px;
-}
-
-.fila-1 {
-    border: 2px;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-/*.fila-2 { 
-    border: 2px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px
-}*/
-
-/*.contenedor img {
-    border-radius: 15%;
-    position: absolute;
-    left: 0;
-    transition: opacity 1.5s ease-in-out;
+    height: 250px;
+    perspective: 1000px;
 }
   
-.contenedor img.top:hover {
-    opacity: 0;
-}*/
 
-.blonde {
-    margin-right: 60px;
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+/*ANIMACIÓN H1 - tracking-in-expand*/
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+  
+    40% {
+      opacity: 0.6;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .tracking-in-expand {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+
+  /*----------FOOTER----------*/
+
+footer{
+    background-color:#bba87b;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    margin-bottom: 0;
+}
+
+footer p{
+    font-size: 0.8em;
+}
+
+footer h3{
+    margin: 10px 0px;
+    border-bottom: 1px solid #eac445;
+    font-family: 'Montserrat', Light;
+    letter-spacing: 1px;
+}
+
+footer i{
+    padding: 5px;
+}
+
+.git{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+#izquierda-footer{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    padding-right: 20px;
+
+}
+
+#izquierda-footer p{
+    padding: 5px;
+}
+
+#centro-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#derecha-footer{
+    border-left: 1px solid white;
+    padding: 0px 20px;
 }

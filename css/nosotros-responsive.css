@@ -1,8 +1,9 @@
+/*cuando el ancho de la pantalla sea menor a 770px*/
 @media (max-width: 770px) {
 
     header .smedia{
         display: none;
-      }
+    }
 
     /* ----------FOOTER----------*/
 
@@ -19,8 +20,6 @@
     #derecha-footer{
         display: none;
     }
-
-
 }
 
 

@@ -1,130 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/birras.css">
-    <link rel="stylesheet" href="/css/birras-navbar-footer.css">
-    <link rel="icon" href="/img/favicon.ico">
-    <title>Birras</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/birras.css">
+    <link rel="stylesheet" href="css/nosotros-responsive.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/2e3e7b8e83.js"></script>
+    <script src="js/menu-hamb.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Prosit - Craft Beer</title>
 </head>
+
 <body>
     
 <!----------HEADER - NAV BAR---------->
 
 <header>
-    <!----------NAVBAR---------->
-    <div class="nav">
+<!----------NAVBAR---------->
+<div class="nav">
+    <div id="logo">
         <a href="index.html">
             <img src="img/logo.webp" alt="logo" width="70px">
         </a>
-        <div id="links">
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="birras.html">BIRRAS</a>
-            <button>
-                <a href="contacto.html">ESCRIBINOS</a>
-            </button>
-        </div>
-        <div class="smedia">
-            <a href="www.facebook.com/prosit.craftbeer" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="www.instagram.com/prosit.craftbeer" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=2267442534&text=Hola!%20Quisiera%20hacer%20una%20consulta." target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-        </div>
-        
-        <!----------MENÚ HAMBURGUESA---------->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <div id="links">
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="birras.html">BIRRAS</a>
+        <a href="eventos.html">EVENTOS</a>
+        <button class="btn-abrir-popup" id="btn-abrir-popup">
+            <a href="#">ESCRIBINOS</a>
+        </button>
+    </div>
+    <div class="smedia">
+        <a href="https://www.facebook.com/prosit.craftbeer" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/prosit.craftbeer" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=2267442534&text=Hola!%20Quisiera%20hacer%20una%20consulta." target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
 
-    <!----------HERO---------->
+    <!----------MENÚ HAMBURGUESA---------->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars fa-2x"></i>
+    </a>
+</div>
+<!----------HERO---------->
     <div class="hero">
         <div class="titulos-portada">
-            <h1>¡PROSIT!</h1>
-            <h2 class="h2">- CRAFT BEER -</h2>
+            <h2 id="hr-lines" class="tracking-in-expand"> 6 ESTILOS, <br> 6 HISTORIAS</h2>
         </div>
-        <a href="nosotros.html">
-            <button>CONOCENOS</button>
-        </a>
     </div>
 </header>
 
-<!----------CIERRE HEADER - NAV BAR---------->
-
-
-<!---------- SECCION 6 ESTILOS - 6 HISTORIAS --------->
-
-
-<section>
-    <div>
-        <h2 class="hr-lines">6 ESTILOS <br> 6 HISTORIAS</h2>    
+<div class="fondo">
+<!---------- SECCION SIGLAS --------->
+<section class="siglas">
+    <div class="srm">
+        <h3>SRM</h3>
+            <p>(STANDAR REFERENCE METHOD)<br>
+                ES EL METODO DE REFERENCIA ESTANDARIZADO PARA CLASIFICAR EL COLOR DE LA CERVEZA.</p>
+    </div>
+    <div class="abv">
+        <h3>ABV</h3>
+            <p>(ALCOHOL BY VOLUME)<br>
+                EXPRESA EL PORCENTAJE DE ALCOHOL POR VOLUMEN DE CERVEZA.</p>
+    </div>
+    <div class="ibu">
+        <h3>IBU</h3>
+        <p>(INTERNATIONAL BITTERNESS UNIT)<br>
+        ES LA FORMA DE MEDIR EL GRADO DE AMARGOR APORTADO POR EL LÚPULO.</p>
     </div>
 </section>
 
-<!---------- CIERRE SECCION 6 ESTILOS - 6 HISTORIAS --------->
-
-<!---------- SECCION DE DEFINICIONES --------->
-<section class="definiciones">
-    <div class="flex-container ">
-            <div class="srm">
-                <p><b><u>SRM</u><br>(STANDAR REFERENCE METHOD)<br>ES EL METODO DE REFERENCIA ESTANDARIZADO PARA CLASIFICAR EL COLOR DE LA CERVEZA.</b></p>
-            </div>
-            <div class="abv">
-                <p><b><u>ABV</u><br>(ALCOHOL BY VOLUME)<br>EXPRESA EL PORCENTAJE DE ALCOHOL POR VOLUMEN DE CERVEZA.</b></p>
-            </div>
-            <div class="ibu">
-                <p><b><u>IBU</u><br>(INTERNATIONAL BITTERNESS UNIT)<br>ES LA FORMA DE MEDIR EL GRADO DE AMARGOR APORTADO POR EL LÚPULO.</b></p>
-            </div>
-    </div>
-</section>
-
-<!---------- CIERRE DE SECCION DE DEFINICIONES --------->
 
 <!---------- SECCION DE ESTILOS --------->
+<section class="contenedor">
+<div class="fila">
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/BIRRA1.webp" alt="Blonde Ale" width="250">
+      </div>
+      <div class="flip-card-back">
+        <img src="img/BIRRA1.1.webp" alt="Blonde Ale" width="250">
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/BIRRA2.webp" alt="APA" width="250">
+      </div>
+      <div class="flip-card-back">
+        <img src="img/BIRRA2.1.webp" alt="APA" width="250">
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/BIRRA3.webp" alt="Red Honey" width="250">
+      </div>
+      <div class="flip-card-back">
+        <img src="img/BIRRA3.1.webp" alt="Red Honey" width="250">
+      </div>
+    </div>
+  </div>
+</div>
 
-<section class="estilos">
-    <div class="contenedor">
-        <div class="fila-1">
-            <div class="blonde">
-                <img src="/img/BIRRA1.1.webp" alt="Blonde" width="250px" height="250px">
-                <img class="top" src="/img/BIRRA1.webp" alt="Blonde" width="250px" height="250px">
-            </div>
-            <div class="apa">
-                <img src="/img/BIRRA2.1.webp" alt="APA" width="250px" height="250px">
-                <img class="top" src="/img/BIRRA2.webp" alt="APA" width="250px" height="250px">
-            </div>
-            <div class="stout">
-                <img src="/img/BIRRA4.1.webp" alt="Stout" width="250px" height="250px">
-                <img class="top" src="/img/BIRRA4.webp" alt="Stout" width="250px" height="250px">
-            </div>-->
+<div class="fila">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/BIRRA4.webp" alt="Dry Stout" width="250">
+          </div>
+          <div class="flip-card-back">
+            <img src="img/BIRRA4.1.webp" alt="Dry Stout" width="250">
+          </div>
         </div>
-        <!--<div class="fila-2">
-            <div class="porter">
-                <img src="/img/BIRRA5.1.webp" alt="Porter" width="250px" height="250px">
-                <img class="top" src="/img/BIRRA5.webp" alt="Porter" width="250px" height="250px">
-            </div>
-            <div class="ipa">
-                <img src="/img/BIRRA6.1.webp" alt="IPA" width="250px" height="250px">
-                <img class="top" src="/img/BIRRA6.webp" alt="IPA" width="250px" height="250px">
-            </div>
-            <div class="honey">
-                <img src="/img/BIRRA3.1.webp" alt="Honey" width="250px" height="250px">
-                <img class="top" src="/img/BIRRA3.webp" alt="Honey" width="250px" height="250px">
-            </div>
-        </div>-->
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/BIRRA5.webp" alt="Porter" width="250">
+          </div>
+          <div class="flip-card-back">
+            <img src="img/BIRRA5.1.webp" alt="Porter" width="250">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/BIRRA6.webp" alt="Red IPA" width="250">
+          </div>
+          <div class="flip-card-back">
+            <img src="img/BIRRA6.1.webp" alt="Red IPA" width="250">
+          </div>
+        </div>
+      </div>
     </div>
 </section>
 
-<!---------- CIERRE DE SECCION DE ESTILOS --------->
-
-<!---------- SECCION FOOTER --------->
 
 <footer>
     <div id="izquierda-footer">
@@ -133,19 +159,19 @@
             <a href="https://github.com/maxigallardo1" target="_blank">
                 <i class="fa-brands fa-github fa-lg"></i>
             </a>
-            <p class="p">GALLARDO, Maximiliano</p> 
+            <p>GALLARDO, Maximiliano</p> 
         </div>
         <div class="git">
             <a href="https://github.com/VeroPapp" target="_blank">
                 <i class="fa-brands fa-github fa-lg"></i>
             </a>
-            <p class="p">PAPP, Verónica</p> 
+            <p>PAPP, Verónica</p> 
         </div>
         <div class="git">
             <a href="https://github.com/patrick274" target="_blank">
                 <i class="fa-brands fa-github fa-lg"></i>
             </a>
-            <p class="p">RABINA, Kevin</p>
+            <p>RABINA, Kevin</p>
          </div>
     </div>
    
@@ -153,10 +179,10 @@
         <img src="img/logo.webp" alt="logo" width="50px">
         <h3>Seguinos en nuestras redes</h3>
         <div>
-            <a href="www.facebook.com/prosit.craftbeer">
+            <a href="https://www.facebook.com/prosit.craftbeer">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="www.instagram.com/prosit.craftbeer">
+            <a href="https://www.instagram.com/prosit.craftbeer">
                 <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://api.whatsapp.com/send?phone=2267442534&text=Hola!%20Quisiera%20hacer%20una%20consulta." target="_blank">
@@ -167,13 +193,34 @@
 
     <div id="derecha-footer">
         <h3>HORARIO</h3>
-        <p class="p">Martes a domingo</p>
-        <p class="p">18 a 03 hs</p>
+        <p>Martes a domingo</p>
+        <p>18 a 03 hs</p>
         <h3>CONTACTO</h3>
-        <p class="p">(0223) 12-3456</p>
-        <p class="p">Avenida siempre viva 123, <br> Mar del plata </p>
+        <p>(0223) 12-3456</p>
+        <p>Avenida siempre viva 123, <br> Mar del plata </p>
    </div>       
 </footer>
 
+<!-- VENTANA POPUP PARA ENVIAR COMENTARIOS -->
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup"
+        class="btn-cerrar-popup">X</a>
+        <h3>ESCRIBINOS</h3>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <input type="text" placeholder="Telefono">
+                    <input id="mensaje" type="text" placeholder="Mensaje">
+                </div>
+                    <input type="submit" class="btn-enviar" value="ENVIAR">
+            </form>
+
+    </div>
+</div>
+
+<script src="js/popup.js"></script>
 </body>
+
 </html>
