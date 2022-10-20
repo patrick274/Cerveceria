@@ -1,0 +1,136 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box; 
+    padding: 0px; 
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/BIRRAS-back.webp");
+}
+
+
+/*------Header------*/
+
+/*------Titulo Principal------*/
+
+.hr-lines {
+    font-size: xx-large;
+    position: relative;
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+}
+  
+  .hr-lines:before {
+    content:" ";
+    height: 3px;
+    width: 200px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    float:inline-start;
+}
+  
+  .hr-lines:after{
+    content:" ";
+    height: 3px;
+    width: 200px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+/*------Flexbox Definiciones------*/
+
+p {
+    padding: 5px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(5, 5, 5, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(32, 32, 32, 0.37);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.18);
+    margin-bottom: 30px;
+}
+
+.srm {
+    width: 500px;
+    border-right: solid;
+}
+
+.abv {
+    width: 500px;
+    border-left: solid;
+    border-right: solid;
+}
+
+.ibu {
+    width: 500px;
+    border-left: solid;
+}
+
+
+/*------Flexbox de Birras------*/
+
+.contenedor {
+    /*border: 2px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;*/
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+}
+
+.fila-1 {
+    border: 2px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*.fila-2 { 
+    border: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px
+}*/
+
+/*.contenedor img {
+    border-radius: 15%;
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+  
+.contenedor img.top:hover {
+    opacity: 0;
+}*/
+
+.blonde {
+    margin-right: 60px;
+}
