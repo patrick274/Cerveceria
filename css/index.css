@@ -10,6 +10,7 @@ h2{
     letter-spacing: 2.5px;
     /* border-bottom: 2px solid #EAC445; */
     text-align: center;
+    text-shadow: 1px 1px 2px rgb(82, 82, 82);
 }
 
 p{
@@ -139,28 +140,31 @@ header{
 
 
 /*----------SECCION 1----------*/
-#s1{
+#s1-INDEX{
     background-color: #bba87b;
     padding: 20px;
 }
 
-#s1 .display{
+#s1-INDEX .display{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 } 
 
-#s1 span{background-color: #EAC445;}
-#s1 iframe{padding: 50px;}
+#s1-INDEX span{background-color: #EAC445;}
+#s1-INDEX iframe{padding: 50px;}
 
+/* #s1-INDEX p{
+    padding: 0px 180px;
+} */
 /*----------SECCION 2----------*/
-#s2{
+#s2-INDEX{
     background-color: #4D3927;
     padding: 20px;
 }
 
-#s2 .display{
+#s2-INDEX .display{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,12 +172,13 @@ header{
     align-items: center;
 } 
 
-#s2 img{
+#s2-INDEX img{
     padding: 20px;
+    width: 60vw
 }
 
 /*----------SECCION 3----------*/
-#s3{
+#s3-INDEX{
     background-image: url(../img/INDEX-back-s3-1440.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,11 +189,11 @@ header{
     justify-content: center;
 }
 
-#s3 h2{
+#s3-INDEX h2{
     padding-bottom: 20px;
 }
 
-#s3 p{
+#s3-INDEX p{
     text-align: center;
 }
 

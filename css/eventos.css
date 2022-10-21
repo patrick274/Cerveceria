@@ -3,39 +3,39 @@
     padding: 0;
     margin: 0;
     color: white;
-}
-
-h1 {
-    font-family: 'Merriweather';
-}
+  }
   
-h2 {
+  h1 {
+    font-family: 'Merriweather';
+  }
+  
+  h2 {
     font-family: 'Montserrat', Light;
     font-size: 2em;
     letter-spacing: 2.5px;
     /* border-bottom: 2px solid #EAC445; */
     text-align: center;
     text-shadow: 1px 1px 2px rgb(82, 82, 82);
-}
+  }
   
-p {
+  p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
     text-align: justify;
-}
+  }
   
-a {
+  a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     text-decoration: none;
-}
+  }
   
-i {
+  i {
     font-size: 30px;
-}
+  }
   
-/* ---------- MENÚ HAMBURGUESA ----------*/
-.nav {
+  /* ---------- MENÚ HAMBURGUESA ----------*/
+  .nav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -43,39 +43,39 @@ i {
     overflow: hidden;
     background-color: rgba(51, 51, 51, 0.237);
     position: relative;
-}
+  }
   
-.nav #links {
+  .nav #links {
     display: none;
-}
+  }
   
-.nav a {
+  .nav a {
     float: center;
     color: white;
     padding: 10px;
     text-decoration: none;
     font-size: 15px;
-}
+  }
   
-.nav a.icon {
+  .nav a.icon {
     float: right;
-}
+  }
   
-.nav button {
+  .nav button {
     border-radius: 20px;
     border: 1px solid #eac445;
     color: white;
     background-color: #eac445;
-}
+  }
   
-header {
-    background-image: url(../img/BIRRAS-back.webp);
+  header {
+    background-image: url(../img/EVENTOS-header.webp);
     background-position: center;
     background-size: cover;
     height: 70vh;
-}
-
-.hero {
+  }
+  
+  .hero {
     text-align: center;
     font-size: 2em;
     display: flex;
@@ -84,137 +84,41 @@ header {
     margin-top: 100px;
   }
   
+  
+  /* ---------- SECCIÓN 1 - EVENTOS  ----------*/
+  .img {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .img img{
+    border-radius: 50%;
+  }
 
-.fondo{
+  .background {
     background-image: url(../img/BIRRAS-back.webp);
     background-position: center;
     background-size: cover;
-}
-
-
-/* #hr-lines {
-    font-size: xx-large;
-    position: relative;
-    max-width: 800px;
-    margin: 100px auto;
-    text-align: center;
-}
-  
-  #hr-lines:before {
-    content:" ";
-    height: 3px;
-    width: 200px;
-    background: white;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    float:inline-start;
-}
-  
-  #hr-lines:after{
-    content:" ";
-    height: 3px;
-    width: 200px;
-    background: white;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-} */
-
-/*------SECCIÓN SIGLAS------*/
-
-.siglas {
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(5, 5, 5, 0.45);
-    border-radius: 10px;
-    border: 1px solid rgba(33, 33, 33, 0.18);
-    margin-bottom: 30px;
-}
-
-.srm {
-    width: 500px;
-    padding: 10px;
-}
-
-.abv {
-    width: 500px;
-    padding: 10px;
-    border-left: 1px solid;
-    border-right: 1px solid;
-}
-
-.ibu {
-    width: 500px;
-    padding: 10px;
-}
-
-.siglas h3{
-    text-align: center;
-}
-
-.siglas p{
-    text-align: center;
-}
-
-/*------SECCIÓN BIRRAS------*/
-.contenedor{
-    padding: 30px 150px 50px;
-}
-
-.fila{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-wrap: wrap;
-}
-
-.fila img{
-    border-radius: 20px;
-    padding: 10px;
-}
-
-/*------ANIMACIÓN BIRRAS FLIP CARD------*/
-
-.flip-card {
-    background-color: transparent;
-    width: 250px;
-    height: 250px;
-    perspective: 1000px;
-}
+  }
   
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
+  #s1-EVENTOS {
+    padding: 50px 180px
+  }
   
+  #s1-EVENTOS h2{
+    padding-bottom: 40px;
+  }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
+  #s1-EVENTOS p {
+    background-color: rgba(151, 136, 101, 0.336);
+    padding: 20px;
+  }
   
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-  
-.flip-card-back {
-    transform: rotateY(180deg);
-}
-
-
-/*ANIMACIÓN H1 - tracking-in-expand*/
-@keyframes tracking-in-expand {
+  /*ANIMACIÓN H1 - tracking-in-expand*/
+  @keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
       opacity: 0;
@@ -233,10 +137,10 @@ header {
   .tracking-in-expand {
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   }
-
+  
   /*----------FOOTER----------*/
-
-footer{
+  
+  footer{
     background-color:#bba87b;
     padding: 20px;
     display: flex;
@@ -244,48 +148,48 @@ footer{
     justify-content: space-between;
     height: 30vh;
     margin-bottom: 0;
-}
-
-footer p{
+  }
+  
+  footer p{
     font-size: 0.8em;
-}
-
-footer h3{
+  }
+  
+  footer h3{
     margin: 10px 0px;
     border-bottom: 1px solid #eac445;
     font-family: 'Montserrat', Light;
     letter-spacing: 1px;
-}
-
-footer i{
+  }
+  
+  footer i{
     padding: 5px;
-}
-
-.git{
+  }
+  
+  .git{
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
-}
-
-#izquierda-footer{
+  }
+  
+  #izquierda-footer{
     display: flex;
     flex-direction: column;
     border-right: 1px solid white;
     padding-right: 20px;
-
-}
-
-#izquierda-footer p{
+  
+  }
+  
+  #izquierda-footer p{
     padding: 5px;
-}
-
-#centro-footer{
+  }
+  
+  #centro-footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#derecha-footer{
+  }
+  
+  #derecha-footer{
     border-left: 1px solid white;
     padding: 0px 20px;
-}
+  }
