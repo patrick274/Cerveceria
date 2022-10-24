@@ -127,10 +127,10 @@
             <a href="#" id="btn-cerrar-popup"
             class="btn-cerrar-popup">X</a>
             <h3>ESCRIBINOS</h3>
-                <form action="">
+                <form id="formulario" action="">
                     <div class="contenedor-inputs">
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="email" placeholder="Correo" required>
+                        <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+                        <input type="email" placeholder="Correo">
                         <input type="text" placeholder="Teléfono">
                         <input id="mensaje" type="text" placeholder="Mensaje">
                     </div>
@@ -141,6 +141,7 @@
     </div>
 
     <script src="js/popup.js"></script>
+    <script src="js/validacion-form.js"></script>
 </body>
 
 </html>

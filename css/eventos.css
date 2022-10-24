@@ -45,6 +45,10 @@
     position: relative;
   }
   
+  #logo {
+    text-align: end;
+  }
+
   .nav #links {
     display: none;
   }

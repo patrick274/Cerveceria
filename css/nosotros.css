@@ -45,6 +45,14 @@ i {
   position: relative;
 }
 
+#logo {
+  text-align: end;
+}
+
+.smedia {
+  text-align:left;
+}
+
 .nav #links {
   display: none;
 }
