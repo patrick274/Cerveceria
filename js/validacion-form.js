@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
     evento.preventDefault();
     var nombre = document.getElementById('nombre').value;
     if(nombre.length == 0) {
-      alert('No has escrito nada en el usuario');
+      alert('Por favor, escribe tu nombre');
       return;
     }
 
     var correo = document.getElementById('correo').value;
     if(!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {;
     return;
-    }
+    } 
 
     this.submit();
   }

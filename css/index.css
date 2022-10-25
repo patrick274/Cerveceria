@@ -1,12 +1,15 @@
-*{box-sizing: border-box; padding: 0; margin: 0; color: white;}
+*{
+    box-sizing: border-box; 
+    padding: 0; margin: 0; 
+    color: white;}
 
-h1{
-    font-family: 'Merriweather';
-}
+body {font-size: 100%;}
+
+h1{font-family: 'Merriweather';}
 
 h2{
     font-family: 'Montserrat', Light;
-    font-size: 2em;
+    font-size: 2.5em;
     letter-spacing: 2.5px;
     /* border-bottom: 2px solid #EAC445; */
     text-align: center;
@@ -15,7 +18,7 @@ h2{
 
 p{
     font-family: 'Open Sans', sans-serif; 
-    font-size: 1.25em; 
+    font-size: 1.5em; 
     text-align: justify;
 }
 
@@ -157,11 +160,21 @@ header{
 } 
 
 #s1-INDEX span{background-color: #EAC445;}
-#s1-INDEX iframe{padding: 50px;}
 
-/* #s1-INDEX p{
-    padding: 0px 180px;
-} */
+#s1-INDEX iframe{
+    padding: 50px;
+    width: 80vh;
+    height: 50vh;
+}
+
+#s1-INDEX h2{
+    margin-top: 20px;
+}
+
+#s1-INDEX p{
+    max-width: 600px;
+}
+
 /*----------SECCION 2----------*/
 #s2-INDEX{
     background-color: #4D3927;
@@ -172,13 +185,28 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
     align-items: center;
+    padding: 50px
 } 
+
+#s2-INDEX-texto{
+    padding: 20px;
+}
 
 #s2-INDEX img{
     padding: 20px;
-    width: 60vw
+    width: 50vw;
+    border-radius: 60px;
+}
+
+#s2-INDEX h2{
+    margin-top: 20px;
+}
+
+li{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.3em;
+    font-style: italic; 
 }
 
 /*----------SECCION 3----------*/
@@ -187,7 +215,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
-    height: 50vh;
+    height: 70vh;
     display:flex;
     align-items: center;
     justify-content: center;
